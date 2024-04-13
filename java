@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/htm");
-        response.getWriter().println("<htm><body><h1>Hello, world!</h1></body></html>");
+        response.setContentType("text/html");
+        response.getWriter().prinln("<html><body><h1>Hello, world!</h1></body></html>");
     }
 }
